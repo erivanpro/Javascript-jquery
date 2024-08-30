@@ -1,0 +1,303 @@
+html 
+{
+    height: 100%;
+    width: 100%;
+}
+
+body 
+{
+    height: 98%;
+    overflow: hidden;
+    background: #d9d8ef;
+}
+
+header 
+{
+    background: seashell;
+    height: 40px;
+    font-size: 190%;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 98%;
+    padding-left: 10px;
+    border: solid 2px green;
+    box-shadow: 2px 2px 8px black;
+}
+
+.title
+{
+    font-size: 240%;
+    text-shadow: 1px 1px 4px chocolate;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border-bottom: solid 4px chocolate;
+}
+
+.container
+{
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    left: 4%;
+    top: 4%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.collectionButton 
+{
+    display: inline-block;
+}
+
+.container > .tool,
+.container > .collectionButton > .tool
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    background: honeydew;
+    box-shadow: 1px 1px 8px grey;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tool > img
+{
+	width: 100px;
+	pointer-events: none;
+}
+
+.tool > label
+{
+    display: block;
+    margin-top: 10px;
+    pointer-events: none;
+    font-size: 80%;
+}
+
+.smallToolBox
+{
+    position: relative;
+    top: -41px;
+    left: 39%;
+}
+
+.smallTool 
+{
+    height: 16px;
+}
+
+.smallTool:hover
+{
+    filter: sepia();
+}
+
+.tool[data-cmd="goToMenu"]
+{
+    font-size: 150%;
+    position: absolute;
+    top: -70px;
+    right: 0%;
+    padding: 10px;
+    border-radius: 6px;
+    background: whitesmoke;
+    box-shadow: 1px 1px 10px black;
+}
+.ownProperties
+{
+    position: absolute;
+    width: 100%;
+    height: 21%;
+    font-size: 120%;
+    color: #909090;
+    background: gainsboro;
+    top: 40px;
+    border: solid 1px black;
+}
+
+.subTitle 
+{
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    font-size: 130%;
+    font-style: italic;
+    font-weight: bold;
+    color: #909090;
+}
+
+.fieldProperties
+{
+    position: absolute;
+    width: 38%;
+    height: 70%;
+    top: 29%;
+    border: solid 1px black;
+    padding: 2px;
+    background: gainsboro;
+}
+
+.lblTitle 
+{
+    font-size: 80%;
+    font-weight: bold;
+    position: relative;
+    top: 22px;
+}
+
+.lblName 
+{
+    left: 30px;
+}
+
+.lblLabel 
+{
+    left: 80px;
+}
+
+.lblType 
+{
+    left: 214px;
+}
+
+.lblLong 
+{
+    left: 310px;
+}
+
+.lblMini 
+{
+    left: 340px;
+}
+
+.lblMaxi 
+{
+    left: 370px;
+}
+
+.cardLayout
+{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 70%;
+    top: 29%;
+    border: solid 1px black;
+    padding: 2px;
+    overflow: auto;
+}
+
+.fieldList
+{
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    height: 90%;
+    margin-top: 4%;
+    border: solid 1px black;
+    padding: 2px;
+    background: whitesmoke;
+    box-shadow: inset -1px -1px 12px grey;
+}
+
+.collectionToolBox
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+}
+
+.ownProperties > fieldset > label
+{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+.ownProperties > fieldset#collectionName
+{
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: 600px;
+}
+
+.ownProperties > fieldset#collectionName > input
+{
+    width: 50%;
+    font-size: 70%;
+}
+
+.ownProperties > fieldset#collectionDescription 
+{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 600px;
+}
+
+.ownProperties > fieldset#collectionDescription > textarea 
+{
+    width: 50%;
+    vertical-align: top;
+    resize: none;
+    height: 50px;
+    font-size: 70%;
+}
+
+.ownProperties > fieldset#collectionLogo 
+{
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: 500px;
+}
+
+.ownProperties > fieldset#collectionLogo img 
+{
+    width: 28px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -6px;
+    left: 24px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.ownProperties > fieldset#collectionLogo img:hover
+{
+    filter: sepia() hue-rotate(325deg);
+}
+
+.selectedCollectionLogo
+{
+    filter: sepia() hue-rotate(45deg);
+}
+
+.notification
+{
+    min-width: 200px;
+    height: 30px;
+    border: solid 3px white;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    left: 10px;
+    position: relative;
+}
+
+.notify_error
+{
+    background: tomato;
+}
+
+.notify_success
+{
+    background: palegreen;
+}

@@ -1,0 +1,34 @@
+<div class="ownProperties">
+	<label class="subTitle">Propriétés de la collection</label>
+	<fieldset id="collectionName">
+		<label>Nom</label>
+		<input type="text" maxlength="30" data-fieldName="COL_label">
+	</fieldset>
+	<fieldset id="collectionDescription">
+		<label>Description</label>
+		<textarea maxlength="500" data-fieldName="COL_description">
+ 		</textarea>
+	</fieldset>
+	<fieldset id="collectionLogo" data-fieldName="COL_type">
+		<label>Symbole</label>
+		<img src="images/image.png" data-val="image" alt="carte/image/photo">
+		<img src="images/livre.png" data-val="livre" alt="livre/magazine">
+		<img src="images/objet.png" data-val="objet" alt="chose/objet">
+		<img src="images/son.png" data-val="son" alt="son/musique/chanson">
+		<img src="images/video.png" data-val="video" alt="video/film">
+	</fieldset>
+	<button class="tool" data-cmd="goToMenu">
+		Retour à l'accueil
+	</button>
+</div>
+<div class="fieldProperties">
+	<label>Liste des champs</label>
+	<div class="fieldList"></div>
+	<div class="collectionToolBox">
+		<button class="tool" data-cmd="addField">Nouveau</button>
+		<button class="tool" data-cmd="deleteField">Supprimer</button>
+	</div>
+</div>
+<div class="cardLayout">
+	<label class="subTitle">Organiser la fiche</label>
+</div>

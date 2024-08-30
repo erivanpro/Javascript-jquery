@@ -1,0 +1,821 @@
+html 
+{
+    height: 100%;
+    width: 100%;
+}
+
+body 
+{
+    height: 98%;
+    overflow: hidden;
+    background: #d9d8ef;
+}
+
+header 
+{
+    background: seashell;
+    height: 40px;
+    font-size: 190%;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 98%;
+    padding-left: 10px;
+    border: solid 2px green;
+    box-shadow: 2px 2px 8px black;
+}
+
+.title
+{
+    font-size: 240%;
+    text-shadow: 1px 1px 4px chocolate;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border-bottom: solid 4px chocolate;
+}
+
+.container
+{
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    left: 4%;
+    top: 4%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.collectionButton 
+{
+    display: inline-block;
+}
+
+.container > .tool,
+.container > .collectionButton > .tool
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    background: honeydew;
+    box-shadow: 1px 1px 8px grey;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tool > img
+{
+	width: 100px;
+	pointer-events: none;
+}
+
+.tool > label
+{
+    display: block;
+    margin-top: 10px;
+    pointer-events: none;
+    font-size: 80%;
+}
+
+.smallToolBox
+{
+    position: relative;
+    top: -41px;
+    left: 39%;
+}
+
+.smallTool 
+{
+    height: 16px;
+}
+
+.smallTool:hover
+{
+    filter: sepia();
+}
+
+.tool[data-cmd="goToMenu"]
+{
+    font-size: 150%;
+    position: absolute;
+    top: -70px;
+    right: 0%;
+    padding: 10px;
+    border-radius: 6px;
+    background: whitesmoke;
+    box-shadow: 1px 1px 10px black;
+}
+.ownProperties
+{
+    position: absolute;
+    width: 100%;
+    height: 21%;
+    font-size: 120%;
+    color: #909090;
+    background: gainsboro;
+    top: 40px;
+    border: solid 1px black;
+}
+
+.subTitle 
+{
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    font-size: 130%;
+    font-style: italic;
+    font-weight: bold;
+    color: #909090;
+}
+
+.fieldProperties
+{
+    position: absolute;
+    width: 38%;
+    height: 70%;
+    top: 29%;
+    border: solid 1px black;
+    padding: 2px;
+    background: gainsboro;
+}
+
+.lblTitle 
+{
+    font-size: 80%;
+    font-weight: bold;
+    position: relative;
+    top: 22px;
+}
+
+.lblName 
+{
+    left: 30px;
+}
+
+.lblLabel 
+{
+    left: 80px;
+}
+
+.lblType 
+{
+    left: 214px;
+}
+
+.lblLong 
+{
+    left: 310px;
+}
+
+.lblMini 
+{
+    left: 340px;
+}
+
+.lblMaxi 
+{
+    left: 370px;
+}
+
+.cardLayout
+{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 70%;
+    top: 29%;
+    border: solid 1px black;
+    padding: 2px;
+    overflow: auto;
+}
+
+.fieldList
+{
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    height: 90%;
+    margin-top: 4%;
+    border: solid 1px black;
+    padding: 2px;
+    background: whitesmoke;
+    box-shadow: inset -1px -1px 12px grey;
+}
+
+.collectionToolBox
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+}
+
+.ownProperties > fieldset > label
+{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+.ownProperties > fieldset#collectionName
+{
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: 600px;
+}
+
+.ownProperties > fieldset#collectionName > input
+{
+    width: 50%;
+    font-size: 70%;
+}
+
+.ownProperties > fieldset#collectionDescription 
+{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 600px;
+}
+
+.ownProperties > fieldset#collectionDescription > textarea 
+{
+    width: 50%;
+    vertical-align: top;
+    resize: none;
+    height: 50px;
+    font-size: 70%;
+}
+
+.ownProperties > fieldset#collectionLogo 
+{
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: 500px;
+}
+
+.ownProperties > fieldset#collectionLogo img 
+{
+    width: 28px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -6px;
+    left: 24px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.ownProperties > fieldset#collectionLogo img:hover
+{
+    filter: sepia() hue-rotate(325deg);
+}
+
+.selectedCollectionLogo
+{
+    filter: sepia() hue-rotate(45deg);
+}
+
+.notification
+{
+    min-width: 200px;
+    height: 30px;
+    border: solid 3px white;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    left: 10px;
+    position: relative;
+}
+
+.notify_error
+{
+    background: tomato;
+}
+
+.notify_success
+{
+    background: palegreen;
+}
+
+.voile
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+}
+
+.addNewField
+{
+    position: absolute;
+    left: 33%;
+    top: 35%;
+    width: 32%;
+    background: lemonchiffon;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 0px 3px 5px #333;
+    transition: height .1s 1s linear;
+}
+
+.addNewField > fieldset
+{
+    margin-bottom: 10px;
+}
+
+.addNewField > fieldset label
+{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.addNewField > fieldset input
+{
+    width: 55%;
+}
+
+.addNewField > fieldset textarea
+{
+    width: 55%;
+}
+
+.addNewField > fieldset select
+{
+    width: 56%;
+}
+
+.addNewField > .fieldInformations fieldset label
+{
+    display: inline-block;
+    width: 40%;
+    margin-right: 4px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.addNewField > .fieldInformations fieldset input
+{
+    width: 55%;
+}
+
+.addNewField > .fieldInformations fieldset textarea
+{
+    width: 55%;
+}
+
+.addNewField > .fieldInformations fieldset select
+{
+    width: 56%;
+}
+
+.addNewField > .toolBox
+{
+    text-align: center;
+    margin-top: 4px;
+}
+
+.lblBoxTitle
+{
+    display: inline-block;
+    width:100%;
+    background: silver;
+    color: white;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.fieldLine 
+{
+    width: 100%;
+    height: 16px;
+    background: wheat;
+    border-bottom: solid 1px gray;
+    cursor: pointer;
+}
+
+.fieldLine:hover
+{
+    background: yellow;
+}
+
+.selectedLine
+{
+    background: palegreen;
+}
+
+.fieldColumn
+{
+    display: inline-block;
+    font-size: 80%;
+    pointer-events: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.columnName
+{
+    width: 14%;
+}
+
+.columnLabel
+{
+    width: 28%;
+}
+
+.columnType
+{
+    width: 15%;
+}
+
+.columnLength,
+.columnMaximum,
+.columnMinimum
+{
+    width: 14%;
+    text-align: right;
+}
+
+.layoutFieldset
+{
+    position: absolute;
+    border: solid 1px #cec9c9;
+    width: 340px;
+    height: 22px;
+}
+
+.layoutFieldset label
+{
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.layoutFieldset input
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.selectedComponent
+{
+    border: solid 1px tomato;
+}
+
+.layoutTools 
+{
+    width: 140px;
+    height: 250px;
+    background: darkgrey;
+    border: solid 2px white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 32px grey;
+    position: absolute;
+    overflow: hidden;
+}
+
+.lblToolboxTitle 
+{
+    display: inline-block;
+    background: gainsboro;
+    width: 100%;
+    text-align: center;
+}
+
+.smallToolLabel
+{
+    font-size: 70%;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.formatTool 
+{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: silver;
+    border: solid 1px;
+    text-align: center;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.formatTool:hover
+{
+    background: white;
+}
+
+.selectedFormatTool
+{
+    background: palegreen;
+}
+
+.formatBold 
+{
+    font-weight: bold;
+}
+
+.formatItalic 
+{
+    font-style: italic;
+}
+
+.formatUnderline
+{
+    text-decoration: underline;
+}
+
+.textListComponent 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content 
+{
+    width: 130px;
+    height: 150px;
+    background: white;
+    border: solid 1px grey;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content>.lblInput 
+{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    margin: initial;
+}
+
+.textListComponent>input 
+{
+    width: 130px;
+}
+
+.layoutRemoveButton 
+{
+    width: 100%;
+    position: relative;
+    bottom: -10px;
+}
+
+.multiChoiceBox 
+{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    border: solid 1px grey;
+    margin-left: 2px;
+}
+
+.multiChoiceBox>.choiceContent>label 
+{
+    text-align: left;
+    display: inline;
+}
+
+.collectionContainer
+{
+    position: absolute;
+    width: 100%;
+    height: 91%;
+    font-size: 120%;
+    color: #909090;
+    background: gainsboro;
+    top: 40px;
+    border: solid 1px black;
+}
+
+.collectionFilterZone 
+{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    font-size: 120%;
+    color: #909090;
+    background: silver;
+    border: solid 1px black;
+}
+
+.collectionFilterZone.tool
+{
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    background: honeydew;
+    box-shadow: 1px 1px 8px grey;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.filterFieldset
+{
+    position: relative;
+    border: transparent 1px;
+    width: 400px;
+    height: 22px;
+    display: inline-block;
+}
+
+.filterFieldset label
+{
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+    margin-right: 4px;
+    text-decoration: underline;
+    color: black;
+    font-size: 70%;
+}
+
+.filterFieldset input
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.collectionFilterZone > .subTitle
+{
+    position: absolute;
+    left: -10px;
+    top: -33px;
+    font-size: 130%;
+    font-style: italic;
+    font-weight: bold;
+    color: #909090;
+}
+
+.collectionList
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+}
+
+.recordTableHeader
+{
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background: gainsboro;
+    border-bottom: solid 2px black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.recordContainer
+{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background: white;
+    margin-bottom: 4px;
+    overflow: auto;
+}
+
+.lblColumHeader 
+{
+    display: inline-block;
+    min-width: 276px;
+    color: black;
+    height: 100%;
+    border-right: solid 1px black;
+    padding-top: 4px;
+    padding-left: 2px;
+}
+
+.newElementWindow
+{
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    min-width: 96%;
+    min-height: 94%;
+    background: gainsboro;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.lblNewElementTitle
+{
+    font-weight: bold;
+    font-size: 170%;
+}
+
+.newElementToolbox
+{
+    position: absolute;
+    bottom: 10px;
+    left: 48%;
+}
+
+.newElementContainer
+{
+    background: white;
+    position: absolute;
+    left: 5%;
+    width: 88%;
+    height: 90%;
+    top: 4%;
+    border: solid 1px black;
+    padding: 2px;
+    overflow: auto;
+}
+
+.realCardFieldset
+{
+   position: absolute;
+}
+
+.realCardFieldset>*:not(label)
+{
+    text-align: left;
+}
+
+.realCardFieldset>label
+{
+    text-align: right;
+    margin-right: 6px;
+}
+
+.realCardFieldset>img
+{
+    border: solid 1px black;
+}
+
+.hiddenInputFile
+{
+    display: none !important;
+}
+
+.lblInput:hover
+{
+    background: lemonchiffon;
+}
+
+.recordLine 
+{
+    border-bottom: solid 1px black;
+    height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.recordLine:hover 
+{
+    background: #e5ffe5;
+}
+
+.recordFieldValue 
+{
+    width: 276px;
+    display: inline-block;
+    border-right: solid 1px black;
+    padding-left: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 80%;
+    color: dodgerblue;
+    height: 18px;
+    padding-top: 3px;
+    pointer-events: none;
+}
+
+.selectedElement
+{
+    background: #f7d66d;
+}
+
+.hiddenInputFile
+{
+    display: none !important;
+}

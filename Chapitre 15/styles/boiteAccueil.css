@@ -1,0 +1,66 @@
+.boiteAccueil 
+{
+    position: absolute;
+    left: 670px;
+    top: -500px;
+    width: 500px;
+    height: 280px;
+    background: wheat;
+    border-radius: 10px;
+    border: solid 6px white;
+    box-shadow: 4px 4px 20px black;
+}
+
+.voile
+{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.BALogo
+{
+    width: 60px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.BATitre
+{
+    font-size: 300%;
+    font-family: Times New Roman;
+    vertical-align: middle;
+}
+
+.BATexte
+{
+    font-size: 120%;
+    margin: 10px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.BAInstructions
+{
+    font-size: 90%;
+    font-family: Times New Roman;
+    margin: 10px;
+    text-align: justify;
+    color: darkolivegreen;
+}
+
+.messageErreur
+{
+    color:red;
+}
+
+.boiteAccueil > button
+{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}

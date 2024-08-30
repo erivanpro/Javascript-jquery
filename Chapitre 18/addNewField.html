@@ -1,0 +1,34 @@
+<div class="addNewField">
+	<label class="lblBoxTitle">Ajouter un nouveau champ</label>
+	<fieldset id="nomChamp">
+		<label>Nom du champ</label>
+		<input type="text" autofocus="true" maxlength="30">
+	</fieldset>
+	<fieldset id="labelChamp">
+		<label>Intitulé du champ</label>
+		<input type="text" maxlength="100">
+	</fieldset>
+	<fieldset id="descriptionChamp">
+		<label>Description du champ</label>
+		<textarea></textarea>
+	</fieldset>
+	<fieldset id="typeChamp">
+		<label>Type de champ</label>
+		<select>
+			<option></option>
+			<option value="choix">Choix</option>
+			<option value="choix multiple">Choix multiple</option>
+			<option value="date">Date</option>
+			<option value="image">Image</option>
+			<option value="liste de textes">Liste de textes</option>
+			<option value="nombre">Nombre</option>
+			<option value="oui/non">Oui/Non</option>
+			<option value="texte">Texte</option>
+		</select>
+	</fieldset>
+	<div class="fieldInformations"></div>
+	<div class="toolBox">
+		<button class="tool" data-cmd="acceptNewField" disabled>Valider</button>
+		<button class="tool" data-cmd="cancelNewField">Annuler</button>
+	</div>
+</div>
